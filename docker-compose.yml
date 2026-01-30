@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./python_backend
+    container_name: rag_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./qwen_model:/qwen_model
+      - ./python_backend/chroma_db:/app/chroma_db
+      - ./python_backend/faiss_index:/app/faiss_index
+      - ./python_backend/psg_data:/app/psg_data
+    environment:
+      - EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    restart: unless-stopped
+
+  frontend:
+    build: ./chatbotui
+    container_name: rag_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

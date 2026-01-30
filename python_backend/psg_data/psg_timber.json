@@ -1,0 +1,159 @@
+{
+  "source": {
+    "website": "https://www.psgbiz.com",
+    "company_name": "Prime Source Global Co. Ltd. L.L.C.",
+    "tagline": "Pioneering Solutions Globally",
+    "location": "Dammam, Saudi Arabia",
+    "contact": {
+      "email": "sales@psgbiz.com",
+      "phone": [
+        "+966 508218146",
+        "+966 544720554",
+        "+966 565401780"
+      ],
+      "address": "Muslim St, Badr Dist., Dammam, 32265, Saudi Arabia"
+    },
+    "scraped_at": "2026-01-30"
+  },
+  "chatbot_scope": {
+    "purpose": "RAG chatbot for Prime Source Global - Timber & Interior Division",
+    "allowed_topics": [
+      "Timber",
+      "Sawn Timber",
+      "Round Logs",
+      "Plywood",
+      "MDF",
+      "Chip Board",
+      "Hardware",
+      "Doors",
+      "Composite Wood",
+      "Furniture",
+      "Carpentry",
+      "Interior Design",
+      "Construction Materials"
+    ],
+    "restricted_topics": []
+  },
+  "documents": [
+    {
+      "doc_id": "psg_timber_overview",
+      "title": "PSG Timber Division Overview",
+      "category": "company_profile",
+      "content": "Prime Source Global (PSG) started with the motive to serve customers with fine quality sawn timber and allied products at affordable prices without compromising quality across GCC countries. With over 15 years of expertise in Timber, PSG has widespread own sawmills in India, Malaysia, and Africa and sources various timber species across the globe. PSG has tied up with factories in Malaysia, Indonesia, Vietnam, and India for supplies of Plywood, MDF, and Particulate Boards (Chip Board). PSG also stepped into the hardware market to serve the Interior Industry.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["overview", "timber", "sawmills", "GCC", "history", "sourcing"]
+      }
+    },
+    {
+      "doc_id": "psg_vision",
+      "title": "PSG Vision",
+      "category": "company_profile",
+      "content": "To emerge as a global leader in Timber and Interior industry by seamlessly integrating innovation with responsibility and satisfaction. We strive to set new standards in quality and environmental stewardship, delivering outstanding products and service while promoting a harmonious balance between industrial advancement and ecological preservation. Our ultimate aim is to help create a premier one-stop store, fulfilling every timber and interior need for the construction and interior sectors with quality, convenience, and comprehensive solutions.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["vision", "leadership", "sustainability", "innovation", "one-stop store"]
+      }
+    },
+    {
+      "doc_id": "psg_mission",
+      "title": "PSG Mission",
+      "category": "company_profile",
+      "content": "To responsibly transform nature's best resources wood into exceptional products that meet the evolving needs of modern society, while steadfastly safeguarding the environment. Through a commitment to sustainable practices, cutting-edge innovation, and ethical teamwork, we aim to deliver high-quality, sustainable timber and innovative interior solutions that enhance the beauty, functionality, and comfort of every space we serve. We strive to create lasting value for our customers, contribute positively to global markets, and enrich local communities. We are committed to being our customer's one-stop destination, offering an extensive selection of top-quality products and service at the best prices.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["mission", "sustainability", "innovation", "ethical", "value"]
+      }
+    },
+    {
+      "doc_id": "psg_products_sawn_timber",
+      "title": "Products: Sawn Timber Species",
+      "category": "products",
+      "content": "PSG offers a range of globally sourced sawn timber in the following wooden species: 1) Teak Wood, 2) Padouk, 3) Merbau, 4) Sal or Balau, 5) Meranti, 6) Kapur, 7) Keruing, 8) Iroko, 9) Mixed Hardwood, 10) Soft Wood.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["sawn timber", "wood species", "teak", "meranti", "hardwood", "softwood"]
+      }
+    },
+    {
+      "doc_id": "psg_products_round_logs",
+      "title": "Products: Round Logs",
+      "category": "products",
+      "content": "PSG offers the following wooden species in Round Log form: Pine Wood and Teak Wood.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["round logs", "pine", "teak"]
+      }
+    },
+    {
+      "doc_id": "psg_products_plywood_boards",
+      "title": "Products: Plywood, MDF, and Boards",
+      "category": "products",
+      "content": "Plywoods: 1) BWP & MR Grade Plywoods, 2) Film Face Plywoods. MDF: 1) MR & HDHMR Grades, 2) Laminated MDF. Chip Board: 1) Plain, 2) Laminated.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["plywood", "MDF", "chip board", "BWP", "MR", "HDHMR", "film face"]
+      }
+    },
+    {
+      "doc_id": "psg_products_hardware",
+      "title": "Products: Hardware",
+      "category": "products",
+      "content": "Tied up with manufacturing factories in India and China, PSG offers a wide range of hardware in bulk quantities as per customer requirement and interior projects. Categories include: Door Hardwares, Furniture Fittings, and Glass Fittings.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["hardware", "fittings", "door hardware", "furniture fittings", "glass fittings"]
+      }
+    },
+    {
+      "doc_id": "psg_products_doors",
+      "title": "Products: Doors",
+      "category": "products",
+      "content": "PSG offers doors made of different materials ranging from chipboard, WPC, and Engineered doors. These are sourced from finest factories and offered as per customer requirements.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["doors", "chipboard", "WPC", "engineered doors"]
+      }
+    },
+    {
+      "doc_id": "psg_products_composite",
+      "title": "Products: Composite Wood Materials",
+      "category": "products",
+      "content": "PSG offers composite materials such as WPC (Wood and Plastic Composite) and NFC (Natural Fibre Composite), which are very good alternatives to natural wood. These are sourced from various parts of the world to cater to customer needs.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["composite materials", "WPC", "NFC", "wood alternatives"]
+      }
+    },
+    {
+      "doc_id": "psg_products_furniture",
+      "title": "Products: Furniture",
+      "category": "products",
+      "content": "PSG offers a wide range of natural wood furniture including Teak wood cots, Wooden Sofas, Dining Tables, and Office Furniture. These are sourced from finest factories in India.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["furniture", "teak wood", "sofas", "dining tables", "office furniture"]
+      }
+    },
+    {
+      "doc_id": "psg_services_carpentry",
+      "title": "Services: Carpentry & Joinery",
+      "category": "services",
+      "content": "When it comes to joinery execution, PSG serves the interior industry with leading experts and high-quality labor to cater to the needs of the Customer.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["carpentry", "joinery", "services", "interior industry"]
+      }
+    },
+    {
+      "doc_id": "psg_contact_saudi",
+      "title": "Contact Information: Saudi Arabia",
+      "category": "contact",
+      "content": "Prime Source Global Co. Ltd. L.L.C. is located at Muslim St, Badr Dist., Dammam, 32265, Saudi Arabia. Contact numbers: +966 508218146, +966 544720554, +966 565401780. Email: sales@psgbiz.com.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["contact", "Saudi Arabia", "Dammam", "phone", "email"]
+      }
+    }
+  ]
+}

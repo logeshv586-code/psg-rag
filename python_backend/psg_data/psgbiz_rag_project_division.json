@@ -1,0 +1,189 @@
+{
+  "source": {
+    "website": "https://www.psgbiz.com/",
+    "company_name": "Prime Source Global (PSG) – Projects Division",
+    "location": "Dammam, Saudi Arabia",
+    "contact": {
+      "email": "ceo@psgbiz.com",
+      "phone": [
+        "+966 508218146",
+        "+966 13 804 4484"
+      ],
+      "address": "Muslim St, Badr District, Dammam – 32265"
+    },
+    "scraped_at": "2026-01-29"
+  },
+  "documents": [
+    {
+      "doc_id": "psg_project_division_overview",
+      "title": "Projects Division Overview",
+      "category": "about",
+      "content": "Prime Source Global (PSG) – Projects Division is located at Muslim St, Badr District, Dammam – 32265. Contact details: Mobile +966 508218146, Landline +966 13 804 4484, Email ceo@psgbiz.com.",
+      "metadata": {
+        "tags": ["overview", "contact", "location", "projects division"]
+      }
+    },
+    {
+      "doc_id": "psg_project_vision_values",
+      "title": "Vision and Core Values",
+      "category": "about",
+      "content": "VISION: To pursue excellence in all operations by improving safety, quality standards, and procedures, and by developing competitive people who deliver world-class service to clients.\n\nCORE VALUES:\n- Excellence: Innovation and quality using advanced technologies\n- Teamwork: Mutual respect and cooperation\n- Integrity: Honesty, reliability, and fairness\n- Commitment: Efficient use of resources to achieve objectives\n- Sustainability: Protecting stakeholders, especially HSE\n- Accountability: Responsibility aligned with company values\n- Customer Satisfaction: Delivered within agreed timelines and limits",
+      "metadata": {
+        "tags": ["vision", "values", "excellence", "integrity", "sustainability"]
+      }
+    },
+    {
+      "doc_id": "psg_project_hse_policy",
+      "title": "HSE (Safety) Policy",
+      "category": "policy",
+      "content": "HSE (Safety) Policy: Complies with Occupational Safety & Health Administration standards. Employee safety is the company’s top responsibility. Safety, health, and environment are prioritized before business decisions. Injury and illness prevention takes priority over productivity.\n\nIncludes: Safety engineering controls, Employee training, Risk assessments, Safety audits.\n\nMandatory compliance for: Employees, Subcontractors, Vendors, External partners.\n\nStatement: HSE is Priority for the Company to maintain Quality Services.",
+      "metadata": {
+        "tags": ["HSE", "safety", "policy", "compliance"]
+      }
+    },
+    {
+      "doc_id": "psg_project_quality_policy",
+      "title": "Quality Policy",
+      "category": "policy",
+      "content": "Quality Policy: Meets all regulatory and legal quality requirements. Exceeds customer expectations. Continuous review through management meetings. Adequate resources for Quality Management System. Encourages pride, workmanship, and teamwork.",
+      "metadata": {
+        "tags": ["quality", "policy", "standards"]
+      }
+    },
+    {
+      "doc_id": "psg_project_business_divisions",
+      "title": "Business Divisions",
+      "category": "services",
+      "content": "Business Divisions: Civil Division, Mechanical Division, Electrical & Instrumentation (E&I) Division, General Maintenance.",
+      "metadata": {
+        "tags": ["divisions", "civil", "mechanical", "electrical", "maintenance"]
+      }
+    },
+    {
+      "doc_id": "psg_project_civil_division",
+      "title": "Civil Division Services & Capabilities",
+      "category": "services",
+      "content": "Civil Division Services: Civil & Structural Construction, Site Development & Earthwork, Temporary Facilities (Porta cabins, fencing, camps), Turnkey Projects, Duct banks, concrete foundations, culverts, Interior fit-out works, Road construction, Dewatering, shoring & sheet piling, Concrete rehabilitation & repair, HDPE / GEO membrane lining, Industrial coating & lining.\n\nCivil Work Capabilities: Civil structure works, Dewatering & shoring works, Concrete rehabilitation (Corrosion survey, Solution design, Execution, Protection).",
+      "metadata": {
+        "tags": ["civil", "construction", "services", "capabilities"]
+      }
+    },
+    {
+      "doc_id": "psg_project_roads_construction",
+      "title": "Roads Construction",
+      "category": "services",
+      "content": "Roads Construction: Right of Way (Access Roads). Clients include: Saudi Aramco, SABIC, RC, SEC. Equipped with modern road construction technology and manpower.",
+      "metadata": {
+        "tags": ["roads", "construction", "clients", "aramco", "sabic"]
+      }
+    },
+    {
+      "doc_id": "psg_project_mechanical_division",
+      "title": "Mechanical Division",
+      "category": "services",
+      "content": "Mechanical Division:\nDewatering & Shoring: Temporary water removal before excavation, Vertical / angled / horizontal shoring systems, Sheet piling works, Grouting & pile drilling.\n\nMechanical & Pipeline Works: Fabrication, erection & welding of metallic pipelines, Installation of non-metallic pipelines, Pipe supports & steel structures, Pipe spool repair/replacement, Hydrotesting of pipelines, Structural buildings.",
+      "metadata": {
+        "tags": ["mechanical", "dewatering", "shoring", "pipeline", "fabrication"]
+      }
+    },
+    {
+      "doc_id": "psg_project_maintenance_pipeline",
+      "title": "Maintenance Pipeline Work",
+      "category": "services",
+      "content": "Maintenance Pipeline Work: Site inspection & technical solutions, Dewatering & shoring deployment, Expert execution as per procedures, Testing, HSE & QA support.",
+      "metadata": {
+        "tags": ["maintenance", "pipeline", "inspection"]
+      }
+    },
+    {
+      "doc_id": "psg_project_electrical_division",
+      "title": "Electrical & Instrumentation (E&I) Division",
+      "category": "services",
+      "content": "Electrical & Instrumentation (E&I) Division: SCADA system installation & pre-commissioning, Cable laying, pulling, termination & testing, Grounding grid installation & testing, Cathodic protection (CP), Solar panel & lighting system installation, Panel termination.\n\nMajor Clients: SATORP, SIEMENS (BI-10-10007), SA KENTZ.",
+      "metadata": {
+        "tags": ["electrical", "instrumentation", "SCADA", "solar", "clients"]
+      }
+    },
+    {
+      "doc_id": "psg_project_rental_equipments",
+      "title": "Rental Equipments",
+      "category": "services",
+      "content": "Rental Equipments: Cranes, Boom lifts, Forklifts, Rollers, Loaders, Trucks, Excavators, Construction machinery.",
+      "metadata": {
+        "tags": ["rental", "equipment", "cranes", "trucks"]
+      }
+    },
+    {
+      "doc_id": "psg_general_about",
+      "title": "About Us - General",
+      "category": "about",
+      "content": "At Prime Source Global, we are committed to pioneering solutions globally across diverse sectors, including trading, travel and tourism, eHealth, environmental consulting, and software development. Our mission is to drive innovation and excellence, delivering exceptional value while prioritizing sustainability and community impact. Through our collaborative approach, we create tailored solutions that cater to our clients’ unique needs, ensuring they thrive in today’s dynamic landscape. Our diverse team of experts works diligently to address the challenges of each industry we serve. From enhancing healthcare accessibility through eHealth solutions to promoting responsible practices in environmental consulting, we strive to make a meaningful difference. At Prime Source Global, we believe in the power of integrity and accountability, and we are passionate about shaping a better future through our pioneering efforts and unwavering commitment to quality.",
+      "metadata": {
+        "tags": ["about", "mission", "values", "sectors"]
+      }
+    },
+    {
+      "doc_id": "psg_general_sectors",
+      "title": "Sectors",
+      "category": "services",
+      "content": "Sectors: Agriculture & Food, (Bio) Chemicals, Rubber & Plastics, Construction, Electrical & Electronics, Forestry & Forest Products, IT, Machinery & Equipment, Medical Devices, Oil, Gas, Minerals & Metals, Public Sector, Pharma & Personal Care, Service, Tourism & Hospitality, Transportation.\n\nPSG started its journey with minds from across the world. Whether it's a small piece of wood from far east Papua New Guinea or a large IT solution from the States, PSG has it all served under one roof.",
+      "metadata": {
+        "tags": ["sectors", "agriculture", "construction", "IT", "tourism"]
+      }
+    },
+    {
+      "doc_id": "psg_general_consultancy",
+      "title": "Consultancy Sectors (ISO Standards)",
+      "category": "services",
+      "content": "Consultancy Sectors:\nISO 9001 - Quality Management\nISO 14001 – Environment Management\nIOS 45001 - Occupational Health & Safety\nISO 22301 - Business Continuity Management\nISO 50001 - Energy Management\nISO 27001 - Information Security\nISO 22716 - Cosmetics GMP\nISO 20000-1 – Service Management\nISO 37301 – Compliance Management\nGreen & Clean\nISO 41001 – Facility Management\nISO 37001 – Anti Bribery\nISO 55001 – Asset Management\nISO 27701 – Privacy Information Management\nISO 20121 – Event Sustainability Management\nISO 42001 – Artificial Intelligence Management",
+      "metadata": {
+        "tags": ["consultancy", "ISO", "standards", "management"]
+      }
+    },
+    {
+      "doc_id": "psg_mep_overview",
+      "title": "MEP Solutions Overview",
+      "category": "services",
+      "content": "PRIME SOURCE GLOBAL (PSG) – RAG KNOWLEDGE BASE\nCOMPANY OVERVIEW\nCompany Name: Prime Source Global (PSG)\nTagline: Pioneering Solutions Globally\nIndustry: MEP Solutions (HVAC, Electrical, Plumbing, Fire Fighting)\nService Region: Middle East & GCC Countries\nWebsite: https://www.psgbiz.com/\n\nHEAD OFFICE\nAddress: Muslim St, Badr District, Dammam – 32265\nMobile: +966 544720554, +966 546498318\nEmail: sales@psgbiz.com, naveed@psg.com\n\nStatement: HSE is Priority & Quality is Standard to maintain in Services",
+      "metadata": {
+        "tags": ["MEP", "overview", "contact", "Dammam"]
+      }
+    },
+    {
+      "doc_id": "psg_mep_hvac",
+      "title": "HVAC Systems Services",
+      "category": "services",
+      "content": "HVAC SYSTEMS\nValves & Flow Control: Gate Valves, Butterfly Valves, Ball Valves, Check Valves, Strainers.\nAdvanced HVAC Components: Flexible Joints, Double Regulating Valves, PICV, Differential Pressure Control Valves.\nHVAC Automation & Monitoring: FCU Valve Packages, Solenoid Valves, Intelligent Control Valves.\nHVAC Equipment: Air Vents, BTU Meters, Water Leak Detection Systems, Exhaust & Fresh Air Fans, Fire Dampers, Air Distribution Products, Thermal & Acoustic Insulation, Pumps (Centrifugal, Fire Pumps, Hydro Pumps).",
+      "metadata": {
+        "tags": ["HVAC", "valves", "automation", "equipment"]
+      }
+    },
+    {
+      "doc_id": "psg_mep_electrical",
+      "title": "Electrical Systems Services",
+      "category": "services",
+      "content": "ELECTRICAL SYSTEMS\nVariable Frequency Drives (VFD): Low / Medium Voltage, 0.37kW – 400kW.\nUPS Systems: Online / Offline / Line Interactive, Backup 5–60 minutes.\nElectrical Cables: Power, Control, Fire-Resistant, Solar.\nCircuit Breakers: MCB, MCCB, ACB, ELCB.",
+      "metadata": {
+        "tags": ["electrical", "VFD", "UPS", "cables", "breakers"]
+      }
+    },
+    {
+      "doc_id": "psg_mep_plumbing",
+      "title": "Plumbing Systems Services",
+      "category": "services",
+      "content": "PLUMBING SYSTEMS\nPVC Pipes & Fittings: 20mm – 400mm.\nCPVC Pipes: Hot & Cold Water, Up to 93°C.\nUPVC Pipes: High UV Resistance, Drainage, Water Plumbing.\nPPR Pipes: Welded joints, Up to 95°C.",
+      "metadata": {
+        "tags": ["plumbing", "PVC", "CPVC", "UPVC", "PPR"]
+      }
+    },
+    {
+      "doc_id": "psg_mep_firefighting",
+      "title": "Fire Fighting Systems Services",
+      "category": "services",
+      "content": "FIRE FIGHTING SYSTEMS\nFire Fighting Valves: Hose Valves, Hydrant Valves, Deluge Valves.\nFire Hydrant Systems: Wet Barrel / Dry Barrel.\nFire Sprinkler Systems: Upright, Pendant, Sidewall, Concealed.\nGas Suppression Systems: CO2 Systems, NOVEC 1230 Systems.\nFire Alarm Systems: Addressable & Conventional, Smoke, Heat, Flame Detectors.\nFire Fighting Pumps: Diesel, Electric, Jockey Pumps.",
+      "metadata": {
+        "tags": ["firefighting", "valves", "hydrant", "sprinkler", "alarm"]
+      }
+    }
+  ]
+}

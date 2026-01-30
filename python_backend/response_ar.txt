@@ -1,0 +1,2 @@
+{"sources": [{"title": "نبذة عن شركة برايم سورس جلوبال (PSG)", "url": "https://www.psgbiz.com/about-us/", "category": "about", "lang": "ar", "tags": "نبذة,الرؤية,الرسالة,القيم"}, {"category": "careers", "url": "https://www.psgbiz.com/career/", "title": "الوظائف في برايم سورس جلوبال", "lang": "ar", "tags": "وظائف,فرص عمل,التوظيف"}, {"url": "https://www.psgbiz.com/construction/", "category": "services", "lang": "ar", "title": "مواد البناء والتشطيبات", "tags": "البناء,MEP,الأخشاب,مواد التشطيب"}]}
+PSG تعني برايم سورس جلوبال في اللغة العربية.

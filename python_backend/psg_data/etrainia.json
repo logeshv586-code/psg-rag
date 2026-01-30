@@ -1,0 +1,171 @@
+{
+  "source": {
+    "website": "https://www.psgbiz.com",
+    "company_name": "Prime Source Global",
+    "product_name": "e-trainia",
+    "collaboration_with": "Next Orbit Technologies L.L.C",
+    "location": "Ras Al Khaimah, UAE",
+    "contact": {
+      "email": "Sales@psgbiz.com",
+      "phone": [
+        "+971 54378553"
+      ],
+      "address": "Compass Building, Al Hamra Industrial Free Zone, Ras Al Khaimah, UAE"
+    },
+    "scraped_at": "2026-01-30"
+  },
+  "chatbot_scope": {
+    "purpose": "RAG chatbot for Prime Source Global - e-trainia product",
+    "allowed_topics": [
+      "e-trainia",
+      "LMS",
+      "ERP",
+      "EdTech",
+      "Training Institutes",
+      "Skill Development Agencies",
+      "Corporate L&D",
+      "HR & Payroll",
+      "Mobile App",
+      "Features",
+      "Pricing",
+      "Support",
+      "Integrations",
+      "Operations",
+      "Finance",
+      "Marketing"
+    ],
+    "restricted_topics": []
+  },
+  "documents": [
+    {
+      "doc_id": "etrainia_overview",
+      "title": "e-trainia: Overview & Mission",
+      "category": "product",
+      "content": "e-trainia is a robust ERP solution and a powerful, all-in-one Learning and Training Management System (LTMS). It is a product of Next Orbit Technologies LLC in collaboration with Prime Source Global (PSG). e-trainia unifies Learning Management (LMS), Training Management (TMS), HR, Finance, Payroll, and Operations into one integrated and intelligent digital ecosystem. Our mission is to enable training institutions and enterprises to deliver world-class learning experiences without the complexity of juggling multiple disconnected systems.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["overview", "mission", "ERP", "LTMS", "LMS", "TMS", "ecosystem"]
+      }
+    },
+    {
+      "doc_id": "etrainia_target_audience",
+      "title": "e-trainia: Target Audience",
+      "category": "product",
+      "content": "e-trainia is designed for corporate training departments, academic institutions, skill development centers, and government training agencies. It is tailored for internal and enterprise training needs, as well as educational providers.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["target audience", "corporate", "academic", "government", "skill development"]
+      }
+    },
+    {
+      "doc_id": "etrainia_usp_training_centric",
+      "title": "e-trainia USP: Training-Centric Features",
+      "category": "features",
+      "content": "e-trainia offers unique training-centric features: 1) Corporate Learning Support tailored for enterprise needs. 2) CIT (Classroom, Instructor, Training) Framework for managing complex instructor-led and classroom training. 3) Practical Learning Tools with hands-on modules for skill-based training. 4) Blended Learning Support combining online and offline learning. 5) RTL Language Support for Arabic and other RTL languages. 6) Formula-Based Evaluation allowing custom grading formulas and logic. 7) Content Protection to secure intellectual property. 8) RBAC (Role-Based Access Control) for granular permission management.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["USP", "training-centric", "CIT", "blended learning", "RTL", "RBAC", "content protection"]
+      }
+    },
+    {
+      "doc_id": "etrainia_usp_unified_platform",
+      "title": "e-trainia USP: Unified Digital Platform",
+      "category": "features",
+      "content": "As a unified platform, e-trainia integrates LMS, TMS, HR, Finance, and more. It includes: 1) Native Mobile Apps (Android & iOS) for students and instructors. 2) Center/Classroom Management tools for scheduling and space allocation. 3) Integrated HR for Instructors to manage records, attendance, and payroll seamlessly.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["USP", "unified platform", "mobile app", "classroom management", "HR integration"]
+      }
+    },
+    {
+      "doc_id": "etrainia_usp_operational_excellence",
+      "title": "e-trainia USP: Operational Excellence",
+      "category": "features",
+      "content": "For operational excellence, e-trainia provides: 1) Procurement Module to track training-related procurement. 2) Material Management for handling learning materials, kits, and assets. 3) Resource Allocation for smart distribution of trainers, venues, and tools. 4) Logistics Management for equipment, transport, and venue needs.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["USP", "operations", "procurement", "material management", "logistics", "resource allocation"]
+      }
+    },
+    {
+      "doc_id": "etrainia_usp_content_delivery",
+      "title": "e-trainia USP: Content Delivery & Automation",
+      "category": "features",
+      "content": "e-trainia enhances content delivery with: 1) Drip Content Scheduling for timed release of modules. 2) SCORM Compliance adhering to international standards. 3) Custom Front-End Options with dynamic themes. 4) Dynamic E2E Front-End Updates allowing real-time content and structure updates.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["USP", "content delivery", "automation", "SCORM", "drip content", "frontend"]
+      }
+    },
+    {
+      "doc_id": "etrainia_usp_finance",
+      "title": "e-trainia USP: Finance & Payments",
+      "category": "features",
+      "content": "Financial features include: 1) Integrated Finance Management with a unified ledger for budgeting, invoicing, and payroll. 2) Payment Gateway Integration for secure online transactions. 3) Refund & Rescheduling Tools for hassle-free cancellations and class changes.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["USP", "finance", "payments", "refunds", "invoicing"]
+      }
+    },
+    {
+      "doc_id": "etrainia_usp_scalability_custom",
+      "title": "e-trainia USP: Scalability & Customizability",
+      "category": "features",
+      "content": "e-trainia supports scalability via External API Support for third-party integrations and Bulk Student Management for high-volume enrollments. Customizability is ensured through Backend Theme Customization and a Trained Product Engineering Team offering expert support with faster turnaround times for implementation.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["USP", "scalability", "customizability", "API", "support"]
+      }
+    },
+    {
+      "doc_id": "etrainia_key_features_lms_erp",
+      "title": "e-trainia Key Features: Unified LMS + ERP",
+      "category": "features",
+      "content": "Key LMS+ERP features: Blended Learning & Drip Content; Practical Assignments & Online Exams; Certification, Attendance, and Role-Based Access; RTL Support (Arabic, Urdu, etc.).",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["features", "LMS", "ERP", "blended learning", "exams", "certification"]
+      }
+    },
+    {
+      "doc_id": "etrainia_key_features_hr_payroll",
+      "title": "e-trainia Key Features: HR & Payroll",
+      "category": "features",
+      "content": "HR & Payroll features: Onboarding for Full-Time & Freelance Instructors; Leave, Loan, and Payroll Automation; Interview Scheduling, Offer Letters, and Self Service Portals.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["features", "HR", "payroll", "onboarding", "automation"]
+      }
+    },
+    {
+      "doc_id": "etrainia_key_features_finance",
+      "title": "e-trainia Key Features: Finance & Accounting",
+      "category": "features",
+      "content": "Finance & Accounting features: Chart of Accounts, GL, Journal Entries; Automated Recurring Billing, EMI Management; Real-time Financial Reporting & AI Reconciliation; Refund, Reschedule & Payment Gateway Integration.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["features", "finance", "accounting", "billing", "reporting"]
+      }
+    },
+    {
+      "doc_id": "etrainia_key_features_ops_marketing",
+      "title": "e-trainia Key Features: Operations & Marketing",
+      "category": "features",
+      "content": "Operations: Procurement & Classroom Material Management; Venue Scheduling, Resource Allocation, and Equipment Handling; Digital Document Storage and Workflow Automation. Marketing: Third-party sync (HubSpot, etc.); SEO-Friendly Site; Lead Capture, Nurturing, and Social Boost Tools.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["features", "operations", "marketing", "procurement", "SEO", "lead capture"]
+      }
+    },
+    {
+      "doc_id": "etrainia_key_features_mobile_custom",
+      "title": "e-trainia Key Features: Mobile Apps & Integration",
+      "category": "features",
+      "content": "Mobile Apps: Native iOS & Android apps for Students and Instructors; Push Notifications, Schedule Access, Video Content, Assessments; White-labeled with institute’s brand. Customization & Integration: Backend Themes & Configurations; Custom Frontend with Dynamic E2E Updates; API Integration with Zoom, Payment Gateways, WhatsApp, Google Calendar, etc.",
+      "metadata": {
+        "url": "https://www.psgbiz.com",
+        "tags": ["features", "mobile app", "integration", "customization", "API"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "source": {
+    "website": "https://www.psgbiz.com",
+    "company_name": "Prime Source Global",
+    "location": "Ras Al Khaimah, UAE",
+    "contact": {
+      "email": "Sales@psgbiz.com",
+      "phone": [
+        "+971 543785531",
+        "+971 72586848"
+      ]
+    },
+    "scraped_at": "2026-01-23"
+  },
+  "documents": [
+    {
+      "doc_id": "psg_overview_zh",
+      "title": "公司简介",
+      "category": "about",
+      "content": "Prime Source Global 是一家多元化公司，提供木材贸易、建筑和室内装饰材料、MEP 服务、数字健康、环境咨询、旅游以及软件和人工智能开发等综合解决方案。公司专注于创新和可持续发展，致力于为海湾合作委员会 (GCC) 和全球市场提供以客户为中心的解决方案。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/about-us/",
+        "tags": [
+          "简介",
+          "愿景",
+          "使命",
+          "价值观"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_digital_health_zh",
+      "title": "数字健康服务",
+      "category": "services",
+      "content": "Prime Source Global 提供数字健康服务，包括虚拟医疗记录、医疗转录、医疗编码和医疗摘要。这些服务旨在提高医疗文档的准确性，减少医生的工作量，并支持远程和可扩展的医疗运营。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/digital-health/",
+        "tags": [
+          "数字健康",
+          "医疗记录",
+          "医疗保健"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_construction_zh",
+      "title": "建筑与室内装饰材料",
+      "category": "services",
+      "content": "PSG 供应木材、胶合板、中密度纤维板 (MDF)、刨花板、五金件、暖通空调 (HVAC)、管道、消防系统、阀门、绝缘材料、管道配件和 MEP 解决方案。产品源自全球，专为住宅、商业和工业建筑项目量身定制。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/construction/",
+        "tags": [
+          "建筑",
+          "MEP",
+          "木材",
+          "五金"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_environmental_zh",
+      "title": "环境咨询与可持续发展",
+      "category": "services",
+      "content": "Prime Source Global 提供环境咨询服务，如环境影响评估 (EIA/ESIA) 报告、可持续发展管理报告、温室气体清单、环境建模，以及符合国际标准和 GRI 框架的组织准备工作。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/environmental/",
+        "tags": [
+          "环境",
+          "可持续发展",
+          "ESG"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_software_ai_zh",
+      "title": "软件开发与人工智能",
+      "category": "services",
+      "content": "PSG 提供软件和人工智能解决方案，包括应用程序开发、云计算、AI/ML 系统、聊天机器人、物联网 (IoT)、增强现实/虚拟现实 (AR/VR) 和技术咨询。服务专注于可扩展性、自动化和数字化转型。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/",
+        "tags": [
+          "软件",
+          "人工智能",
+          "技术"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_tourism_zh",
+      "title": "旅游服务",
+      "category": "services",
+      "content": "Prime Source Global 在阿联酋和沙特阿拉伯提供定制的旅游套餐，包括个人游、团队游、蜜月套餐、签证服务和精选目的地体验。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/uae-tour/",
+        "tags": [
+          "旅游",
+          "旅行",
+          "签证"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_careers_zh",
+      "title": "Prime Source Global 的职业机会",
+      "category": "careers",
+      "content": "Prime Source Global 提供各个业务部门的职业机会。候选人可以通过电子邮件提交简历进行申请。公司重视协作、创新和职业发展。",
+      "metadata": {
+        "url": "https://www.psgbiz.com/career/",
+        "tags": [
+          "职业",
+          "工作",
+          "招聘"
+        ]
+      }
+    }
+  ]
+}

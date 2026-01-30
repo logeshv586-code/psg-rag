@@ -1,0 +1,211 @@
+{
+  "source": {
+    "website": "https://www.psgbiz.com",
+    "company_name": "Prime Source Global",
+    "location": "Ras Al Khaimah, UAE",
+    "contact": {
+      "email": "Sales@psgbiz.com",
+      "phone": [
+        "+971 543785531",
+        "+971 72586848"
+      ],
+      "address": "Compass Building, Al Hamra Industrial Free Zone, Ras Al Khaimah, UAE"
+    },
+    "scraped_at": "2026-01-23"
+  },
+  "chatbot_scope": {
+    "purpose": "Domain-specific RAG chatbot for Prime Source Global",
+    "allowed_topics": [
+      "Company overview",
+      "Services and offerings",
+      "Digital Health",
+      "Construction & Interior Supplies",
+      "Environmental Consultancy",
+      "Software & AI",
+      "Travel & Tourism",
+      "Careers",
+      "Contact information",
+      "Partners",
+      "Business model"
+    ],
+    "restricted_topics": [
+      "Medical advice",
+      "Legal advice",
+      "Pricing commitments"
+    ]
+  },
+  "documents": [
+    {
+      "doc_id": "psg_overview",
+      "title": "Company Overview",
+      "category": "about",
+      "content": "Prime Source Global delivers innovative solutions in timber trading, hardware, MEP products, digital health, tourism, and software development from its base in Ras Al Khaimah, UAE. Its vision emphasizes global leadership through sustainability and customer focus, with core values like integrity and excellence guiding operations. Contact details include phones (+971 543785531, +971 72586848), email (Sales@psgbiz.com), and address at Compass Building, Al Hamra Industrial Free Zone.",
+      "metadata": {
+        "url": "https://www.psgbiz.com/about-us/",
+        "tags": [
+          "overview",
+          "mission",
+          "vision",
+          "values",
+          "contact",
+          "location"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_construction",
+      "title": "Construction & Interior Supplies",
+      "category": "services",
+      "content": "Offers timber (teak, meranti, pine), plywood (BWP, MR grade, film-faced), MDF/chipboard, door/furniture/glass fittings, MEP/HVAC (valves, strainers, pumps, fire systems), and pipes. Sourced globally (Asia/Europe for timber/plywood, UK for hardware via LOCKRON).",
+      "metadata": {
+        "url": "https://www.psgbiz.com/construction/",
+        "tags": [
+          "construction",
+          "MEP",
+          "timber",
+          "plywood",
+          "hardware",
+          "HVAC"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_digital_health",
+      "title": "Digital Health Services",
+      "category": "services",
+      "content": "Provides virtual medical scribing, transcription, coding, and summarization, emphasizing accuracy, EHR integration, HIPAA compliance, and cost savings via partners like MD24 Global. Expertise includes speech recognition and compliant services for healthcare providers.",
+      "metadata": {
+        "url": "https://www.psgbiz.com/digital-health/",
+        "tags": [
+          "digital health",
+          "medical scribing",
+          "HIPAA",
+          "transcription",
+          "MD24 Global"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_environmental",
+      "title": "Environmental Consultancy & Sustainability",
+      "category": "services",
+      "content": "Focuses on sustainability management, regulatory compliance, reports, and preparedness. Partners include R&R Environment for consulting. Services cover EIA/ESIA reports, greenhouse gas inventories, and environmental modeling.",
+      "metadata": {
+        "url": "https://www.psgbiz.com/environmental/",
+        "tags": [
+          "environment",
+          "sustainability",
+          "consultancy",
+          "R&R Environment"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_tourism",
+      "title": "Travel & Tourism Services",
+      "category": "services",
+      "content": "Includes UAE/Saudi packages, solo/backpacker trips, honeymoons, group tours, and GCC visa services, prioritizing personalized, budget-friendly experiences. Partnered with Maqnah (inferred).",
+      "metadata": {
+        "url": "https://www.psgbiz.com/uae-tour/",
+        "tags": [
+          "tourism",
+          "travel",
+          "visa",
+          "packages",
+          "Maqnah"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_software_ai",
+      "title": "Software Development & AI",
+      "category": "services",
+      "content": "Covers app development (iOS/Android/web), IoT, AI/ML/chatbots/AR/VR, cloud computing, custom software (React, PHP, WordPress), digital transformation, and sales integration. Partner: Touchmark Descience (IT consulting, digital marketing, software development).",
+      "metadata": {
+        "url": "https://www.psgbiz.com/",
+        "tags": [
+          "software",
+          "AI",
+          "app development",
+          "IoT",
+          "Touchmark Descience"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_partners",
+      "title": "Strategic Partners",
+      "category": "about",
+      "content": "PSG lists six key partners: Touchmark Descience (IT consulting/software), MD24 Global (medical transcription), Maqnah (tourism), R&R Environment (environmental consulting), Era Timbers (timber supply), and Plymarc (plywood sourcing).",
+      "metadata": {
+        "url": "https://www.psgbiz.com/",
+        "tags": [
+          "partners",
+          "Touchmark Descience",
+          "MD24 Global",
+          "Plymarc",
+          "Era Timbers"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_structure_branding",
+      "title": "Site Structure & Branding",
+      "category": "meta",
+      "content": "Main navigation links to /about-us/, /construction/, /digital-health/, /environmental/, /software/, /tourism/, /media/. Branding includes logo 'psg_logo-removebg-preview' and ©2025 copyright. Focus on B2B consulting/supply with WhatsApp integration. No e-commerce functionality.",
+      "metadata": {
+        "url": "https://www.psgbiz.com/",
+        "tags": [
+          "branding",
+          "navigation",
+          "B2B"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_how_it_works",
+      "title": "How It Works",
+      "category": "about",
+      "content": "PSG integrates units via partnerships (e.g., Touchmark for software, MD24 for health) and sources globally (Asia/Europe for timber/plywood, UK for hardware via LOCKRON). Workflow: Client inquiries via contact/email lead to tailored solutions (e.g., MEP quotes, visa processing, app builds). Sustainability threads all units.",
+      "metadata": {
+        "url": "https://www.psgbiz.com/",
+        "tags": [
+          "workflow",
+          "business model",
+          "sourcing"
+        ]
+      }
+    },
+    {
+      "doc_id": "psg_careers",
+      "title": "Careers at Prime Source Global",
+      "category": "careers",
+      "content": "Prime Source Global offers career opportunities across its business units. You can apply for jobs at Prime Source Global (PSG) by submitting your resume via email to their company. The company values collaboration, innovation, and professional growth.",
+      "metadata": {
+        "url": "https://www.psgbiz.com/career/",
+        "tags": [
+          "careers",
+          "jobs",
+          "hiring",
+          "email",
+          "resume"
+        ]
+      }
+    }
+  ],
+  "rag_config_recommendation": {
+    "chunking": {
+      "strategy": "semantic",
+      "max_tokens": 512,
+      "overlap": 64
+    },
+    "embedding": {
+      "recommended_model": "text-embedding-3-large",
+      "vector_dimensions": 3072
+    },
+    "retrieval": {
+      "top_k": 5,
+      "score_threshold": 0.75
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# Models
+*.gguf
+qwen_model/
+python_backend/qwen_model/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+venv/
+ENV/
+env/
+python_backend/chroma_db/
+python_backend/faiss_index/
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,121 @@
+{
+  "source": {
+    "website": "https://www.psgbiz.com",
+    "company_name": "Prime Source Global (PSG)",
+    "location": "Global (UAE, Saudi Arabia, India, Malaysia)",
+    "contact": {
+      "email": "info@psgbiz.com",
+      "phone": ["+971 543785531", "+966 508218146"],
+      "address": "Compass Building, Al Hamra Industrial Free Zone, Ras Al Khaimah, UAE"
+    },
+    "scraped_at": "2026-01-30"
+  },
+  "chatbot_scope": {
+    "purpose": "Comprehensive RAG chatbot for Prime Source Global Group",
+    "allowed_topics": [
+      "Company Overview",
+      "Business Model",
+      "Software and AI Solutions",
+      "Travel and Tourism",
+      "Careers",
+      "Partners",
+      "Digital Health",
+      "Environmental Consultancy",
+      "Training and Workforce Development",
+      "Contact Information"
+    ],
+    "restricted_topics": []
+  },
+  "documents": [
+    {
+      "doc_id": "psg_corp_overview_expanded",
+      "title": "Comprehensive Company Overview",
+      "category": "about",
+      "content": "Prime Source Global (PSG) is a diversified multinational conglomerate headquartered in Ras Al Khaimah, UAE, with significant operations in Saudi Arabia, India, and Southeast Asia. Established with a vision to lead through innovation and sustainability, PSG operates across multiple high-impact sectors: Construction & Interior Supplies, Technology (Software & AI), Digital Health, Environmental Consultancy, and Travel & Tourism. PSG prides itself on being a 'One-Stop Solution' provider, leveraging global sourcing capabilities and local expertise to deliver excellence. The company values Integrity, Excellence, Teamwork, and Sustainability.",
+      "metadata": {
+        "tags": ["overview", "about us", "multinational", "sectors", "vision", "values"]
+      }
+    },
+    {
+      "doc_id": "psg_business_model",
+      "title": "Business Model",
+      "category": "about",
+      "content": "PSG's business model is built on diversification and vertical integration. 1) Trading & Sourcing: Leveraging direct relationships with manufacturers in Asia and Europe to supply high-quality timber, hardware, and construction materials at competitive prices. 2) Technology Solutions: Developing proprietary platforms (like e-Trainia) and offering bespoke software/AI services to enterprise clients. 3) Service Delivery: Providing specialized consultancy in environmental compliance and digital health operations. 4) Projects & Contracting: Executing turnkey civil, mechanical, and electrical projects in the GCC region. This multi-pillar approach ensures stability and cross-sector growth.",
+      "metadata": {
+        "tags": ["business model", "diversification", "trading", "technology", "services", "projects"]
+      }
+    },
+    {
+      "doc_id": "psg_software_ai_solutions",
+      "title": "Software and AI Solutions",
+      "category": "services",
+      "content": "PSG’s Technology Division offers cutting-edge Software and AI solutions designed to drive digital transformation. Services include: 1) Custom Software Development: Tailored enterprise applications, web portals, and mobile apps. 2) Artificial Intelligence & ML: Implementing predictive analytics, natural language processing (NLP) chatbots, and automation tools. 3) ERP & LMS Implementation: Deployment and customization of enterprise resource planning and learning management systems (including e-Trainia). 4) Cloud Services & IT Infrastructure: Secure cloud migration, hosting, and IT support services. We empower businesses to optimize operations and enhance customer engagement through technology.",
+      "metadata": {
+        "tags": ["software", "AI", "technology", "development", "ERP", "cloud", "digital transformation"]
+      }
+    },
+    {
+      "doc_id": "psg_travel_tourism",
+      "title": "Travel and Tourism Services",
+      "category": "services",
+      "content": "PSG Travel & Tourism provides comprehensive travel management services for corporate and leisure clients. Offerings include: 1) Corporate Travel Management: End-to-end booking of flights, hotels, and transport for business trips. 2) Visa Assistance: Professional support for visa processing across various destinations. 3) Holiday Packages: Customized leisure tour packages, including adventure, luxury, and family trips. 4) MICE Services: Organization of Meetings, Incentives, Conferences, and Exhibitions. We aim to make travel seamless, cost-effective, and memorable.",
+      "metadata": {
+        "tags": ["travel", "tourism", "corporate travel", "visa", "holiday packages", "MICE"]
+      }
+    },
+    {
+      "doc_id": "psg_careers",
+      "title": "Careers at PSG",
+      "category": "careers",
+      "content": "Join Prime Source Global (PSG) to be part of a dynamic, innovative, and growth-oriented team. We offer opportunities across various domains including Engineering, Software Development, Sales & Marketing, Supply Chain, and Administration. Why work with us? 1) Global Exposure: Work on international projects. 2) Professional Growth: Continuous learning and development programs. 3) Inclusive Culture: A diverse and supportive work environment. Interested candidates can explore current openings on our website or submit their CVs to our HR department at careers@psgbiz.com.",
+      "metadata": {
+        "tags": ["careers", "jobs", "hiring", "HR", "work culture", "benefits"]
+      }
+    },
+    {
+      "doc_id": "psg_partners",
+      "title": "Our Partners",
+      "category": "about",
+      "content": "PSG collaborates with industry leaders to deliver the best solutions. Our ecosystem includes: 1) Technology Partners: Next Orbit Technologies (Software/EdTech), Major Cloud Providers. 2) Manufacturing Partners: Leading timber and hardware factories in Malaysia, India, Indonesia, and China. 3) Healthcare Partners: MD24 Global (Digital Health). 4) Environmental Partners: R&R Environment (Sustainability Consulting). These strategic alliances enable us to offer world-class products and services.",
+      "metadata": {
+        "tags": ["partners", "alliances", "technology", "manufacturing", "healthcare"]
+      }
+    },
+    {
+      "doc_id": "psg_digital_health_expanded",
+      "title": "Digital Health Services (Expanded)",
+      "category": "services",
+      "content": "PSG’s Digital Health division revolutionizes healthcare administration. Services include: 1) Medical Scribing: Virtual scribes to document patient encounters in real-time, reducing physician burnout. 2) Medical Transcription: Accurate and timely transcription of dictations. 3) Medical Coding & Billing: Certified coders ensuring compliance and optimal reimbursement (ICD-10, CPT). 4) Clinical Data Management: Organizing and analyzing healthcare data for better decision-making. 5) HIPAA Compliance: All services adhere strictly to data privacy and security regulations.",
+      "metadata": {
+        "tags": ["digital health", "scribing", "transcription", "coding", "billing", "HIPAA"]
+      }
+    },
+    {
+      "doc_id": "psg_environmental_consultancy_expanded",
+      "title": "Environmental Consultancy (Expanded)",
+      "category": "services",
+      "content": "PSG Environmental Consultancy supports sustainable development through expert guidance. Key services: 1) Environmental Impact Assessments (EIA/ESIA): Evaluating potential effects of projects before implementation. 2) Sustainability Reporting: Helping companies measure and report ESG (Environmental, Social, Governance) performance. 3) Regulatory Compliance: Ensuring adherence to local and international environmental laws. 4) Waste Management Plans: Strategies for minimizing and managing industrial waste. 5) Green Building Consulting: Advice on LEED certification and energy-efficient design.",
+      "metadata": {
+        "tags": ["environmental", "consultancy", "sustainability", "EIA", "ESG", "compliance"]
+      }
+    },
+    {
+      "doc_id": "psg_training_workforce_dev",
+      "title": "Training and Workforce Development",
+      "category": "services",
+      "content": "Beyond our e-Trainia platform, PSG offers strategic services in Training and Workforce Development. We partner with: 1) Training Institutes: To modernize their curriculum and delivery methods. 2) Skill Development Agencies: executing government and private skilling mandates. 3) Corporate L&D Departments: Designing bespoke training programs for employee upskilling in leadership, technical skills, and soft skills. 4) HR & Payroll Services: Offering outsourced HR operations, payroll processing, and recruitment services to streamline business operations.",
+      "metadata": {
+        "tags": ["training", "workforce development", "skill development", "L&D", "HR services", "payroll"]
+      }
+    },
+    {
+      "doc_id": "psg_contact_consolidated",
+      "title": "Consolidated Contact Information",
+      "category": "contact",
+      "content": "Reach Prime Source Global at our key locations: \n\nUAE HQ:\nCompass Building, Al Hamra Industrial Free Zone, Ras Al Khaimah, UAE\nEmail: Sales@psgbiz.com\nPhone: +971 543785531, +971 72586848\n\nSaudi Arabia (Projects & Timber):\nMuslim St, Badr District, Dammam – 32265\nEmail: ceo@psgbiz.com, sales@psgbiz.com\nPhone: +966 508218146, +966 13 804 4484\n\nFor Careers: careers@psgbiz.com\nFor General Inquiries: info@psgbiz.com",
+      "metadata": {
+        "tags": ["contact", "locations", "UAE", "Saudi Arabia", "email", "phone"]
+      }
+    }
+  ]
+}
