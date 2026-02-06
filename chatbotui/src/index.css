@@ -37,14 +37,31 @@ body {
   }
 }
 
-@keyframes messageIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px) scale(0.98);
+@keyframes message3DSlide {
+  0% {
+      opacity: 0;
+      transform: translateY(30px) translateZ(-50px) rotateX(-15deg);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
+  60% {
+      transform: translateY(-5px) translateZ(10px) rotateX(2deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) translateZ(0) rotateX(0deg);
+  }
+}
+
+@keyframes userMessage3D {
+  0% {
+      opacity: 0;
+      transform: translateX(30px) translateZ(-50px) rotateY(-15deg);
+  }
+  60% {
+      transform: translateX(-3px) translateZ(10px) rotateY(2deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0) translateZ(0) rotateY(0deg);
   }
 }
 
@@ -70,7 +87,13 @@ body {
 }
 
 .animate-message-in {
-  animation: messageIn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: message3DSlide 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  transform-style: preserve-3d;
+}
+
+.animate-user-message-in {
+  animation: userMessage3D 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  transform-style: preserve-3d;
 }
 
 .animate-float {
@@ -80,3 +103,57 @@ body {
 .animate-scale-in {
   animation: scaleIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Enhanced Animations - Added for smoother experience */
+@keyframes fadeInUpSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes textShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes floatMore {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-8px) rotate(-1deg); }
+  75% { transform: translateY(4px) rotate(1deg); }
+}
+
+.animate-fade-in-up-smooth {
+  animation: fadeInUpSmooth 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.animate-text-shimmer {
+  background-size: 200% auto;
+  animation: textShimmer 4s linear infinite;
+}
+
+.animate-float-more {
+  animation: floatMore 6s ease-in-out infinite;
+}
+
+/* Animation Delays */
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-700 { animation-delay: 700ms; }
