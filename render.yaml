@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rag-backend
+    env: docker
+    dockerfilePath: python_backend/Dockerfile
+    autoDeploy: true
+    plan: starter
+    region: oregon
+    envVars:
+      - key: EMBEDDING_MODEL
+        value: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    disk:
+      name: qwen-model
+      mountPath: /qwen_model
+      sizeGB: 8

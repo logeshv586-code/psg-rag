@@ -9,8 +9,13 @@ services:
       - ./python_backend/chroma_db:/app/chroma_db
       - ./python_backend/faiss_index:/app/faiss_index
       - ./python_backend/psg_data:/app/psg_data
+      - ./python_backend/whisper_models:/app/whisper_models
     environment:
       - EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+      - LOCAL_WHISPER_MODEL=medium
+      - LOCAL_WHISPER_DEVICE=cpu
+      - LOCAL_WHISPER_COMPUTE=int8
+      - WHISPER_LANG=en
     restart: unless-stopped
 
   frontend:

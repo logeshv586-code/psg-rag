@@ -24,6 +24,9 @@ function App() {
   const messagesEndRef = useRef(null);
   const recognitionRef = useRef(null);
   const [isListening, setIsListening] = useState(false);
+  const mediaRecorderRef = useRef(null);
+  const audioChunksRef = useRef([]);
+  const streamRef = useRef(null);
  
   const ragTypes = [
     { key: 'basic_rag', title: 'Basic RAG', icon: Search, short: 'Embed, retrieve Top‑K, answer with citations.', works: ['Split text to chunks', 'Embed into vectors', 'Search Top‑K', 'Generate with context'], canDo: ['FAQs', 'General Q&A'], query: 'Explain basic RAG workflow' },
@@ -79,6 +82,79 @@ function App() {
     }
   }, []);
 
+  const sendAudio = async (blob) => {
+    const fd = new FormData();
+    fd.append('file', blob, 'speech.webm');
+    try {
+      const resp = await fetch('http://localhost:8000/transcribe', { method: 'POST', body: fd });
+      if (!resp.ok) throw new Error('fail');
+      const data = await resp.json();
+      const t = (data && data.text) || '';
+      if (t) setInputValue((prev) => (prev ? prev + ' ' + t : t));
+    } catch (e) {
+      const r = recognitionRef.current;
+      if (r) {
+        r.start();
+        setIsListening(true);
+      }
+    }
+  };
+
+  const startListen = async () => {
+    const w = typeof window !== 'undefined' ? window : null;
+    if (!w || !w.navigator || !w.MediaRecorder) {
+      const r = recognitionRef.current;
+      if (r) {
+        r.start();
+        setIsListening(true);
+      } else {
+        setIsListening(true);
+      }
+      return;
+    }
+    try {
+      const stream = await w.navigator.mediaDevices.getUserMedia({ audio: true });
+      streamRef.current = stream;
+      const mr = new w.MediaRecorder(stream);
+      audioChunksRef.current = [];
+      mr.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) audioChunksRef.current.push(e.data);
+      };
+      mr.onstop = async () => {
+        const blob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+        audioChunksRef.current = [];
+        if (streamRef.current) {
+          streamRef.current.getTracks().forEach((t) => t.stop());
+          streamRef.current = null;
+        }
+        await sendAudio(blob);
+        setIsListening(false);
+      };
+      mediaRecorderRef.current = mr;
+      mr.start();
+      setIsListening(true);
+    } catch (e) {
+      setIsListening(false);
+    }
+  };
+
+  const stopListen = () => {
+    const w = typeof window !== 'undefined' ? window : null;
+    const mr = mediaRecorderRef.current;
+    if (w && mr && mr.state !== 'inactive') {
+      mr.stop();
+      mediaRecorderRef.current = null;
+      return;
+    }
+    const r = recognitionRef.current;
+    if (r) {
+      r.stop();
+      setIsListening(false);
+    } else {
+      setIsListening(false);
+    }
+  };
+
   const handleSend = async (textOverride) => {
     const text = (textOverride ?? inputValue).trim();
     if (!text) return;
@@ -125,17 +201,10 @@ function App() {
     setSelected(null);
   };
   const toggleListening = () => {
-    const r = recognitionRef.current;
-    if (!r) {
-      setIsListening((v) => !v);
-      return;
-    }
     if (isListening) {
-      r.stop();
-      setIsListening(false);
+      stopListen();
     } else {
-      r.start();
-      setIsListening(true);
+      startListen();
     }
   };
   const applySampleQuery = (q) => {
@@ -215,7 +284,7 @@ function App() {
           }} />
         </div>
  
-        <div className="px-8 py-8 max-w-7xl mx-auto">
+        <div id="solutions" className="px-8 py-8 max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl md:text-3xl font-bold">RAG Types</h2>
             <span className="text-sm text-zinc-400">Tap a card to learn more</span>
@@ -427,6 +496,15 @@ function App() {
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSend()}
                />
+              <button 
+                 onClick={toggleListening}
+                 className={`px-3 py-2 rounded-full border ${isListening ? 'border-cyan-500 bg-cyan-500 text-black' : 'border-zinc-700 bg-zinc-900 text-zinc-300'}`}
+              >
+                <div className="flex items-center gap-2">
+                  <Mic className="w-4 h-4" />
+                  <span className="text-sm">{isListening ? 'Listening' : 'Voice'}</span>
+                </div>
+              </button>
                
                <button 
                   onClick={handleSend}
