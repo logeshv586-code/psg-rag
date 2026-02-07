@@ -1,0 +1,172 @@
+{
+  "source": {
+    "dataset": "rag_ui_catalog",
+    "generated_from": "frontend_ui",
+    "company_name": "Prime Source Global",
+    "language": "en",
+    "created_at": "2026-02-08"
+  },
+  "chatbot_scope": {
+    "purpose": "Catalog of RAG types and assistant templates to answer how it works and capabilities",
+    "allowed_topics": [
+      "RAG Types",
+      "Assistant Templates",
+      "Capabilities",
+      "How it works",
+      "What you can build",
+      "Voice assistant",
+      "Multilingual RAG",
+      "Guardrails"
+    ],
+    "restricted_topics": []
+  },
+  "documents": [
+    {
+      "doc_id": "rag_basic",
+      "title": "Basic RAG",
+      "category": "rag_types",
+      "content": "Basic RAG combines retrieval and generation. It splits text into chunks, embeds them as vectors, retrieves the Top‑K most relevant chunks for a query, and generates an answer using that context with citations.",
+      "metadata": { "tags": ["rag", "basic", "top-k", "embeddings", "citations"] }
+    },
+    {
+      "doc_id": "rag_hybrid",
+      "title": "Hybrid RAG",
+      "category": "rag_types",
+      "content": "Hybrid RAG improves recall and precision by combining keyword search (e.g., BM25) with vector search. Scores are blended, results deduplicated and re-ranked to capture exact terms and semantic meaning together.",
+      "metadata": { "tags": ["rag", "hybrid", "bm25", "vector", "ranking"] }
+    },
+    {
+      "doc_id": "rag_conversational",
+      "title": "Conversational RAG",
+      "category": "rag_types",
+      "content": "Conversational RAG maintains dialogue state across turns. It retrieves new context per message and summarizes memory so the assistant can remain consistent and helpful during multi-turn conversations.",
+      "metadata": { "tags": ["rag", "conversational", "memory", "multi-turn"] }
+    },
+    {
+      "doc_id": "rag_multimodal",
+      "title": "Multimodal RAG",
+      "category": "rag_types",
+      "content": "Multimodal RAG retrieves and reasons over text, images, audio, or video together. It uses modality-specific embeddings and cross‑modal retrieval to answer questions requiring multiple content types.",
+      "metadata": { "tags": ["rag", "multimodal", "images", "audio", "video"] }
+    },
+    {
+      "doc_id": "rag_structured",
+      "title": "Structured RAG",
+      "category": "rag_types",
+      "content": "Structured RAG is schema-aware for tables and databases. It blends SQL or tabular results with textual context, enabling precise answers from reports and dashboards.",
+      "metadata": { "tags": ["rag", "structured", "sql", "tables", "reports"] }
+    },
+    {
+      "doc_id": "rag_kg",
+      "title": "Knowledge Graph RAG",
+      "category": "rag_types",
+      "content": "Knowledge Graph RAG leverages entity relationships via graph traversal and path‑aware context selection. It yields precise answers for compliance and entity relation queries.",
+      "metadata": { "tags": ["rag", "knowledge-graph", "entities", "relations", "compliance"] }
+    },
+    {
+      "doc_id": "rag_agentic",
+      "title": "Agentic RAG",
+      "category": "rag_types",
+      "content": "Agentic RAG adds planning and tool use to retrieval. A planner decides actions, calls tools and iterates with retrieval to accomplish complex research or automation tasks.",
+      "metadata": { "tags": ["rag", "agentic", "planner", "tools", "automation"] }
+    },
+    {
+      "doc_id": "rag_realtime",
+      "title": "Real‑time RAG",
+      "category": "rag_types",
+      "content": "Real‑time RAG ingests new data continuously and answers with fresh content. It uses streaming ingestion and ephemeral caches to serve up-to-date results for news or operational alerts.",
+      "metadata": { "tags": ["rag", "real-time", "streaming", "freshness"] }
+    },
+    {
+      "doc_id": "rag_personalized",
+      "title": "Personalized RAG",
+      "category": "rag_types",
+      "content": "Personalized RAG incorporates user profiles and preferences during retrieval. It indexes and scopes content by audience to support portals and personalized learning.",
+      "metadata": { "tags": ["rag", "personalization", "profiles", "audience"] }
+    },
+    {
+      "doc_id": "rag_crosslingual",
+      "title": "Cross‑lingual RAG",
+      "category": "rag_types",
+      "content": "Cross‑lingual RAG retrieves and answers across languages using multilingual embeddings and optional translation. It suits global sites and multilingual support.",
+      "metadata": { "tags": ["rag", "multilingual", "cross-lingual", "translation"] }
+    },
+    {
+      "doc_id": "rag_voice",
+      "title": "Voice RAG",
+      "category": "rag_types",
+      "content": "Voice RAG integrates speech-to-text and text-to-speech with retrieval and citations. It supports kiosks, hotlines, and accessibility features.",
+      "metadata": { "tags": ["rag", "voice", "stt", "tts", "accessibility"] }
+    },
+    {
+      "doc_id": "rag_citation",
+      "title": "Citation RAG",
+      "category": "rag_types",
+      "content": "Citation RAG emphasizes evidence with chunk-level identifiers and inline references. It is ideal for knowledge pages and audits where traceability matters.",
+      "metadata": { "tags": ["rag", "citations", "evidence", "traceability"] }
+    },
+    {
+      "doc_id": "rag_guardrails",
+      "title": "Guardrailed RAG",
+      "category": "rag_types",
+      "content": "Guardrailed RAG enforces topic allow/deny lists and safety checks. It ensures enterprise and healthcare assistants follow policy constraints.",
+      "metadata": { "tags": ["rag", "guardrails", "policy", "safety"] }
+    },
+    {
+      "doc_id": "assistant_faq",
+      "title": "FAQ Bot",
+      "category": "assistant_templates",
+      "content": "The FAQ Bot answers common questions using RAG context and citations. It is suitable for websites and customer portals where quick answers are required.",
+      "metadata": { "tags": ["assistant", "faq", "citations", "website"] }
+    },
+    {
+      "doc_id": "assistant_support",
+      "title": "Customer Support",
+      "category": "assistant_templates",
+      "content": "Customer Support assistants provide troubleshooting with guided flows. They can escalate or create tickets while keeping answers grounded in documented procedures.",
+      "metadata": { "tags": ["assistant", "support", "troubleshooting", "flows"] }
+    },
+    {
+      "doc_id": "assistant_sales",
+      "title": "Sales Assistant",
+      "category": "assistant_templates",
+      "content": "Sales assistants qualify leads and suggest offerings based on RAG context. They help create quotes and recommend packages while staying aligned to product information.",
+      "metadata": { "tags": ["assistant", "sales", "leads", "quotes"] }
+    },
+    {
+      "doc_id": "assistant_hr",
+      "title": "HR Assistant",
+      "category": "assistant_templates",
+      "content": "HR assistants answer questions about policies, benefits, and careers. They guide candidates through application steps and provide compliant responses.",
+      "metadata": { "tags": ["assistant", "hr", "policies", "careers"] }
+    },
+    {
+      "doc_id": "assistant_internal_search",
+      "title": "Internal Search",
+      "category": "assistant_templates",
+      "content": "Internal Search assistants quickly locate SOPs and internal documents across shared drives and wikis, providing relevant excerpts and links.",
+      "metadata": { "tags": ["assistant", "search", "sop", "docs"] }
+    },
+    {
+      "doc_id": "assistant_doc_qa",
+      "title": "Document Q&A",
+      "category": "assistant_templates",
+      "content": "Document Q&A assistants answer questions across PDFs and manuals. They can summarize sections and cite the exact source lines.",
+      "metadata": { "tags": ["assistant", "documents", "pdf", "manuals", "summary"] }
+    },
+    {
+      "doc_id": "assistant_data_analyst",
+      "title": "Data Analyst",
+      "category": "assistant_templates",
+      "content": "Data Analyst assistants explain KPIs and trends in plain language. They help stakeholders understand metrics and time-series behavior.",
+      "metadata": { "tags": ["assistant", "analytics", "kpi", "trends"] }
+    },
+    {
+      "doc_id": "assistant_compliance",
+      "title": "Compliance Advisor",
+      "category": "assistant_templates",
+      "content": "Compliance advisors support policy lookups, audit preparation, and risk checks. They ensure responses align with regulatory frameworks.",
+      "metadata": { "tags": ["assistant", "compliance", "policy", "audit", "risk"] }
+    }
+  ]
+}

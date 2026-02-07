@@ -14,7 +14,8 @@ DATA_FILES = [
     os.path.join(DATA_DIR, "psgbiz_rag_project_division.json"),
     os.path.join(DATA_DIR, "etrainia.json"),
     os.path.join(DATA_DIR, "psg_timber.json"),
-    os.path.join(DATA_DIR, "psg_corporate_comprehensive.json")
+    os.path.join(DATA_DIR, "psg_corporate_comprehensive.json"),
+    os.path.join(DATA_DIR, "rag_ui_catalog.json")
 ]
 
 # ==============================================================================

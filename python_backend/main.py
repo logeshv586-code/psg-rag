@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi import UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 try:
@@ -16,6 +17,19 @@ from llama_cpp import Llama
 from contextlib import asynccontextmanager
 import json
 import requests
+try:
+    from openai import OpenAI
+except Exception:
+    OpenAI = None
+try:
+    from faster_whisper import WhisperModel
+except Exception:
+    WhisperModel = None
+import tempfile
+try:
+    from huggingface_hub import snapshot_download
+except Exception:
+    snapshot_download = None
 
 # Import Configuration
 try:
@@ -201,6 +215,36 @@ async def lifespan(app: FastAPI):
         else:
             print(f"Warning: Model file not found at {LLM_MODEL_PATH}")
             models['llm'] = None
+        
+        # Load local Whisper STT (optional)
+        if WhisperModel is not None:
+            try:
+                model_name = os.environ.get("LOCAL_WHISPER_MODEL", "medium")
+                device = os.environ.get("LOCAL_WHISPER_DEVICE", "cpu")
+                compute_type = os.environ.get("LOCAL_WHISPER_COMPUTE", "int8")
+                local_root = os.path.join(BASE_DIR, "whisper_models")
+                os.makedirs(local_root, exist_ok=True)
+                local_dir = None
+                if snapshot_download is not None:
+                    try:
+                        repo_id = f"guillaumekln/faster-whisper-{model_name}"
+                        local_dir = os.path.join(local_root, model_name)
+                        os.makedirs(local_dir, exist_ok=True)
+                        snapshot_download(repo_id=repo_id, local_dir=local_dir, local_dir_use_symlinks=False)
+                        print(f"Local Whisper model downloaded to {local_dir}")
+                    except Exception as e:
+                        print(f"Warning: Whisper manual download failed: {e}")
+                        local_dir = None
+                if local_dir:
+                    models['whisper'] = WhisperModel(local_dir, device=device, compute_type=compute_type)
+                else:
+                    models['whisper'] = WhisperModel(model_name, device=device, compute_type=compute_type, download_root=local_root)
+                print("Local Whisper model initialized.")
+            except Exception as e:
+                print(f"Warning: Failed to initialize local Whisper: {e}")
+                models['whisper'] = None
+        else:
+            models['whisper'] = None
     else:
         print("Running in MOCK MODE. Skipping heavy model loading.")
         models['embedding'] = None
@@ -238,6 +282,46 @@ class QueryRequest(BaseModel):
 class QueryResponse(BaseModel):
     answer: str
     sources: list
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+@app.post("/transcribe")
+async def transcribe(file: UploadFile = File(...)):
+    data = await file.read()
+    # Prefer local Whisper if available
+    if models.get("whisper") is not None:
+        try:
+            suffix = os.path.splitext(file.filename or "")[1] or ".webm"
+            with tempfile.NamedTemporaryFile(delete=True, suffix=suffix) as tmp:
+                tmp.write(data)
+                tmp.flush()
+                segments, info = models["whisper"].transcribe(
+                    tmp.name,
+                    language=os.environ.get("WHISPER_LANG", "en")
+                )
+                text = "".join([seg.text for seg in segments])
+                return {"text": text.strip()}
+        except Exception as e:
+            # Fall through to cloud STT
+            pass
+    # Fallback: OpenAI Whisper API
+    if OpenAI is None:
+        raise HTTPException(status_code=501, detail="Transcription not available")
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=501, detail="OPENAI_API_KEY not configured")
+    from io import BytesIO
+    bio = BytesIO(data)
+    bio.name = file.filename or "audio.webm"
+    model_name = os.environ.get("STT_MODEL", "whisper-1")
+    try:
+        client = OpenAI(api_key=api_key)
+        result = client.audio.transcriptions.create(model=model_name, file=bio)
+        return {"text": getattr(result, "text", "")}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 def _rasa_intent(query: str):
     try:

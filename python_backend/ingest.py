@@ -7,7 +7,7 @@ except ImportError:
     faiss = None
     print("Warning: faiss module not found. Index creation will be skipped.")
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from local_embeddings import LocalSentenceTransformer as SentenceTransformer
 import pickle
 
 # Import Configuration
@@ -71,22 +71,22 @@ def ingest_data():
         return
 
     # Load Model
-    print(f"Loading Sentence Transformer model ({EMBEDDING_MODEL_NAME})...")
+    print(f"Loading embedding model ({EMBEDDING_MODEL_NAME})...")
     try:
         model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     except Exception as e:
         print(f"Error loading model {EMBEDDING_MODEL_NAME}: {e}")
-        # Fallback to local_embeddings wrapper if needed, but standard library is preferred here
-        # Assuming sentence_transformers works or we fail gracefully
-        return
+        model = None
 
     # Encode
-    print("Encoding texts...")
-    embeddings = model.encode(texts, show_progress_bar=True)
-    embeddings = np.array(embeddings).astype('float32')
+    embeddings = None
+    if model:
+        print("Encoding texts...")
+        embeddings = model.encode(texts, show_progress_bar=True)
+        embeddings = np.array(embeddings).astype('float32')
 
     # Create FAISS index
-    if faiss:
+    if faiss and embeddings is not None:
         print("Creating FAISS index...")
         dimension = embeddings.shape[1]
         index = faiss.IndexFlatL2(dimension)
@@ -96,7 +96,7 @@ def ingest_data():
         print(f"Saving index to {INDEX_FILE}...")
         faiss.write_index(index, INDEX_FILE)
     else:
-        print("Skipping FAISS index creation (faiss not installed).")
+        print("Skipping FAISS index creation (faiss not installed or embeddings unavailable).")
 
     # Save Metadata
     print(f"Saving metadata to {METADATA_FILE}...")

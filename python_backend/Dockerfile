@@ -1,25 +1,41 @@
-FROM python:3.12-slim
+FROM python:3.12-slim AS builder
 
 WORKDIR /app
 
-# Install build dependencies for llama-cpp-python and others
-RUN apt-get update && apt-get install -y \
+ENV PIP_NO_CACHE_DIR=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     cmake \
     python3-dev \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first to leverage cache
 COPY requirements.txt .
+RUN python -m pip install --upgrade pip wheel setuptools && \
+    pip wheel --no-cache-dir -r requirements.txt -w /wheels
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+FROM python:3.12-slim AS runtime
 
-# Copy the rest of the application
+WORKDIR /app
+
+ENV PIP_NO_CACHE_DIR=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libstdc++6 \
+    libgomp1 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /wheels /wheels
+RUN pip install /wheels/* && rm -rf /wheels
+
 COPY . .
 
-# Expose port
 EXPOSE 8000
 
-# Command to run the application
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
